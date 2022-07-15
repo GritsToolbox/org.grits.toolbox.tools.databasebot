@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<filtersLibrary name="MS Plugin Filter" version="1.21">
+    <monosaccharideFilter min="0" label="Glc" name="Glc" terminalOnly="false">
+        <description>Number of Glucose residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-dglc-HEX-1:5</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="Gal" name="Gal" terminalOnly="false">
+        <description>Number of Galactose residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-dgal-HEX-1:5</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="Man" name="Man" terminalOnly="false">
+        <description>Number of Mannose residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-dman-HEX-1:5</sequence> 
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="Fuc" name="Fuc" terminalOnly="false">
+        <description>Number of Fucose residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-lgal-HEX-1:5|6:d</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="NeuAc" name="NeuAc" terminalOnly="false">
+        <description>Number of NeuAc residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d
+2s:n-acetyl
+LIN
+1:1d(5+1)2n</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="NeuGc" name="NeuGc" terminalOnly="false">
+        <description>Number of NeuGc residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d
+2s:n-glycolyl
+LIN
+1:1d(5+1)2n</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="GlcNAc" name="GlcNAc" terminalOnly="false">
+        <description>Number of GlcNAc residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-dglc-HEX-1:5
+2s:n-acetyl
+LIN
+1:1d(2+1)2n</sequence>
+
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="GalNAc" name="GalNAc" terminalOnly="false">
+        <description>Number of GalNAc residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-dgal-HEX-1:5
+2s:n-acetyl
+LIN
+1:1d(2+1)2n</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="GlcA" name="GlcA" terminalOnly="false">
+        <description>Glucoronic acid residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-dglc-HEX-1:5|6:a</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="IdoA" name="IdoA" terminalOnly="false">
+        <description>Iduronic acid residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-lido-HEX-1:5|6:a</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="Ara" name="Ara" terminalOnly="false">
+        <description>Number of Araf residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-lara-PEN-1:4</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="Xyl" name="Xyl" terminalOnly="false">
+        <description>Number of Xylose residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-dxyl-PEN-1:5</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="KDO" name="KDO" terminalOnly="false">
+        <description>Number of KDO residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-dman-OCT-x:x|1:a|2:keto|3:d</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="KDN" name="KDN" terminalOnly="false">
+        <description>Number of KDN residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-dgro-dgal-NON-x:x|1:a|2:keto|3:d</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="dUA" name="dUA" terminalOnly="false">
+        <description>Number of dUA residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-lthr-HEX-1:5|4,5:en|4:d|6:a</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="Rha" name="Rha" terminalOnly="false">
+        <description>Number of Rhamnose residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-lman-HEX-1:5|6:d</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+
+    <monosaccharideFilter min="0" label="Gal (terminal)" name="Gal (terminal)" terminalOnly="true">
+        <description>Number of terminal Galactose residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-dgal-HEX-1:5</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="Man (terminal)" name="Man (terminal)" terminalOnly="true">
+        <description>Number of terminal Mannose residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-dman-HEX-1:5</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="Fuc (terminal)" name="Fuc (terminal)" terminalOnly="true">
+        <description>Number of terminal Fucose residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-lgal-HEX-1:5|6:d</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="GlcNAc (terminal)" name="GlcNAc (terminal)" terminalOnly="true">
+        <description>Number of terminal GlcNAc residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-dglc-HEX-1:5
+2s:n-acetyl
+LIN
+1:1d(2+1)2n</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="GalNAc (terminal)" name="GalNAc (terminal)" terminalOnly="true">
+        <description>Number of terminal GalNAc residues</description>
+        <monosaccharide allowModifications="false" allowSubstituents="false">
+            <sequence>RES
+1b:x-dgal-HEX-1:5
+2s:n-acetyl
+LIN
+1:1d(2+1)2n</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    <monosaccharideFilter min="0" label="Sialic acid" name="Sialic acid" terminalOnly="false">
+        <description>Number of Sialic acid residues (all types of Neu)</description>
+        <monosaccharide allowModifications="true" allowSubstituents="true">
+            <sequence>RES
+1b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d</sequence>
+        </monosaccharide>
+    </monosaccharideFilter>
+    
+    <modificationFilter min="0" label="Acidic" name="Acidic residues" modification="a">
+        <description>Number of residues with acidic modifications</description> 
+    </modificationFilter>
+
+    <antennaFilter min="0" label="# Antenna" name="# Antenna" filterBisection="true">
+        <description>Number of branches</description>
+        <monosaccharide allowSubstituents="true" allowModifications="false">
+            <sequence>RES
+1b:a-lgal-HEX-1:5
+            </sequence>
+        </monosaccharide>
+    </antennaFilter>
+    <substituentFilter min="0" label="S" name="Sulphate" substituent="sulfate">
+        <description>Sulphate modification</description>
+    </substituentFilter>
+    <substituentFilter min="0" label="P" name="Phosphate" substituent="phosphate">
+        <description>Phosphate modification</description>
+    </substituentFilter>
+
+    <substructureFilter label="Polysialyl" name="Polysialic acid">
+        <description>NeupAc-NeupAc disaccharide (any linkage allowed)</description>
+        <substructure reducingEnd="false">
+            <sequence>RES
+1b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d
+2b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d
+3s:n-acetyl
+4s:n-acetyl
+LIN
+1:1o(-1+2)2d
+2:2d(5+1)3n
+3:1d(5+1)4n</sequence>
+        </substructure>
+    </substructureFilter>
+
+    <substructureFilter label="GalGal" name="GalGal">
+        <description>Gal(1-3)Gal Epitope</description>
+        <substructure reducingEnd="false">
+            <sequence>RES
+1b:x-dgal-HEX-1:5
+2b:a-dgal-HEX-1:5
+LIN
+1:1o(3+1)2d</sequence>
+        </substructure>
+    </substructureFilter>
+
+    <substructureFilter label="LeA" name="Lewis A motif">
+        <description>Lewis A motif</description>
+        <substructure reducingEnd="false">
+            <sequence>RES
+1b:b-dglc-HEX-1:5
+2s:n-acetyl
+3b:b-dgal-HEX-1:5
+4b:a-lgal-HEX-1:5|6:d
+LIN
+1:1d(2+1)2n
+2:1o(3+1)3d
+3:1o(4+1)4d</sequence>
+        </substructure>
+    </substructureFilter>
+
+    <substructureFilter label="Glc beta 3/6" name="Glc beta 3/6">
+        <description>b-D-Glcp with two b-D-Glcp children at position 3 and 6</description>
+        <substructure reducingEnd="false">
+            <sequence>RES
+1b:b-dglc-HEX-1:5
+2b:x-dglc-HEX-1:5
+3b:x-dglc-HEX-1:5
+LIN
+1:1o(3+1)2d
+2:1o(6+1)3d</sequence>
+        </substructure>
+    </substructureFilter>
+    
+    <substructureFilter label="LeX" name="Lewis X motif">
+        <description>Lewis X motif</description>
+        <substructure reducingEnd="false">
+            <sequence>RES
+1b:b-dglc-HEX-1:5
+2s:n-acetyl
+3b:a-lgal-HEX-1:5|6:d
+4b:b-dgal-HEX-1:5
+LIN
+1:1d(2+1)2n
+2:1o(3+1)3d
+3:1o(4+1)4d</sequence>
+        </substructure>
+    </substructureFilter>
+    
+    <substructureFilter label="core-Fuc" name="core-Fuc">
+    	<description>Structures with core Fucose</description>
+    	<substructure reducingEnd="true">
+    		<sequence>RES
+1b:b-dglc-HEX-1:5
+2s:n-acetyl
+3b:a-lgal-HEX-1:5|6:d
+LIN
+1:1d(2+1)2n
+2:1o(6+1)3d</sequence>
+    	</substructure>
+    </substructureFilter>
+    
+    <substructureFilter label="bisected" name="bisected">
+    	<description>bisected structures</description>
+    	<substructure reducingEnd="false">
+    		<sequence>RES
+1b:b-dman-HEX-1:5
+2b:a-dman-HEX-1:5
+3b:b-dglc-HEX-1:5
+4s:n-acetyl
+5b:a-dman-HEX-1:5
+LIN
+1:1o(3+1)2d
+2:1o(4+1)3d
+3:3d(2+1)4n
+4:1o(6+1)5d</sequence>
+    	</substructure>
+    </substructureFilter>
+    
+    
+<combinationFilter label="N-Type" name="N-Glycan Type">
+    <description>Filter by the type of N-glycan (complex, hybrid, high mannose)</description>
+    <order filterName="High mannose N-glycan" order="0"/>
+    <order filterName="Complex N-glycan" order="1"/>
+    <order filterName="Hybrid N-glycan" order="2"/>
+    <substructureFilter label="HighMan" name="High mannose N-glycan">
+        <description>High mannose N-glycan</description>
+        <substructure reducingEnd="true">
+            <sequence>RES
+1b:x-dglc-HEX-1:5
+2s:n-acetyl
+3b:b-dglc-HEX-1:5
+4s:n-acetyl
+5b:b-dman-HEX-1:5
+6b:a-dman-HEX-1:5
+7b:x-dman-HEX-1:5
+8b:a-dman-HEX-1:5
+9b:x-dman-HEX-1:5
+LIN
+1:1d(2+1)2n
+2:1o(4+1)3d
+3:3d(2+1)4n
+4:3o(4+1)5d
+5:5o(3+1)6d
+6:6o(-1+1)7d
+7:5o(6+1)8d
+8:8o(-1+1)9d</sequence>
+        </substructure>
+    </substructureFilter>
+    <substructureFilter label="Complex" name="Complex N-glycan">
+        <description>Complex N-glycan</description>
+        <substructure reducingEnd="true">
+            <sequence>RES
+1b:x-dglc-HEX-1:5
+2s:n-acetyl
+3b:b-dglc-HEX-1:5
+4s:n-acetyl
+5b:b-dman-HEX-1:5
+6b:a-dman-HEX-1:5
+7b:x-dglc-HEX-1:5
+8s:n-acetyl
+9b:a-dman-HEX-1:5
+10b:x-dglc-HEX-1:5
+11s:n-acetyl
+LIN
+1:1d(2+1)2n
+2:1o(4+1)3d
+3:3d(2+1)4n
+4:3o(4+1)5d
+5:5o(3+1)6d
+6:6o(-1+1)7d
+7:7d(2+1)8n
+8:5o(6+1)9d
+9:9o(-1+1)10d
+10:10d(2+1)11n</sequence>
+        </substructure>
+    </substructureFilter>
+    <substructureFilter label="Hybrid" name="Hybrid N-glycan">
+        <description>Hybrid N-glycan</description>
+        <substructure reducingEnd="true">
+            <sequence>RES
+1b:x-dglc-HEX-1:5
+2s:n-acetyl
+3b:b-dglc-HEX-1:5
+4s:n-acetyl
+5b:b-dman-HEX-1:5
+6b:a-dman-HEX-1:5
+7b:x-dglc-HEX-1:5
+8s:n-acetyl
+9b:a-dman-HEX-1:5
+10b:x-dman-HEX-1:5
+LIN
+1:1d(2+1)2n
+2:1o(4+1)3d
+3:3d(2+1)4n
+4:3o(4+1)5d
+5:5o(3+1)6d
+6:6o(-1+1)7d
+7:7d(2+1)8n
+8:5o(6+1)9d
+9:9o(-1+1)10d</sequence>
+        </substructure>
+    </substructureFilter>
+
+</combinationFilter>
+
+    <combinationFilter label="Sia linkage" name="Sialic acid linkage">
+        <description>Sialic acid (terminal) linkage filter</description>
+        <order filterName="2,2-Sialyl termini" order="0"/>
+        <order filterName="2,3- Sialyl termini" order="1"/>
+        <order filterName="2,6- Sialyl termini" order="2"/>
+        <order filterName="2,8- Sialyl termini" order="3"/>
+        <order filterName="2,9- Sialyl termini" order="4"/>
+        <order filterName="2,3:2,6- Sialyl termini" order="5"/>
+        <order filterName="2,3:2,8-Sialyl termini" order="6"/> 
+        <linkageFilter chosenLinkagePattern="2" terminal="true" label="2,2-Sialyl termini" name="2,2-Sialyl termini">
+            <description/>
+            <monosaccharide allowModifications="true" allowSubstituents="true">
+                <sequence>RES
+1b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d</sequence>
+            </monosaccharide>
+        </linkageFilter>
+        <linkageFilter chosenLinkagePattern="3" terminal="true" label="2,3- Sialyl termini" name="2,3- Sialyl termini">
+            <description/>
+            <monosaccharide allowModifications="true" allowSubstituents="true">
+                <sequence>RES
+1b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d</sequence>
+            </monosaccharide>
+        </linkageFilter>
+        <linkageFilter chosenLinkagePattern="6" terminal="true" label="2,6- Sialyl termini" name="2,6- Sialyl termini">
+            <description/>
+            <monosaccharide allowModifications="true" allowSubstituents="true">
+                <sequence>RES
+1b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d</sequence>
+            </monosaccharide>
+        </linkageFilter>
+        <linkageFilter chosenLinkagePattern="8" terminal="true" label="2,8- Sialyl termini" name="2,8- Sialyl termini">
+            <description/>
+            <monosaccharide allowModifications="true" allowSubstituents="true">
+                <sequence>RES
+1b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d</sequence>
+            </monosaccharide>
+        </linkageFilter>
+        <linkageFilter chosenLinkagePattern="9" terminal="true" label="2,9- Sialyl termini" name="2,9- Sialyl termini">
+            <description/>
+            <monosaccharide allowModifications="true" allowSubstituents="true">
+                <sequence>RES
+1b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d</sequence>
+            </monosaccharide>
+        </linkageFilter>
+        <linkageFilter chosenLinkagePattern="3,6" terminal="true" label="2,3:2,6- Sialyl termini" name="2,3:2,6- Sialyl termini">
+            <description/>
+            <monosaccharide allowModifications="true" allowSubstituents="true">
+                <sequence>RES
+1b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d</sequence>
+            </monosaccharide>
+        </linkageFilter>
+        <linkageFilter chosenLinkagePattern="3,8" terminal="true" label="2,3:2,8-Sialyl termini" name="2,3:2,8-Sialyl termini">
+            <description/>
+            <monosaccharide allowModifications="true" allowSubstituents="true">
+                <sequence>RES
+1b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d</sequence>
+            </monosaccharide>
+        </linkageFilter>
+    </combinationFilter>
+
+    <combinationFilter label="Glc linkage" name="Glc linkage">
+        <description>Glucose linkage filter</description>
+        <order filterName="Glc alpha 2" order="0"/>
+        <order filterName="Glc alpha 3" order="1"/>
+        <order filterName="Glc alpha 4" order="2"/>
+        <order filterName="Glc alpha 6" order="3"/>
+        <order filterName="Glc alpha 4,6" order="4"/>
+        <order filterName="Glc beta 2" order="5"/>
+        <order filterName="Glc beta 3" order="6"/>
+        <order filterName="Glc beta 4" order="7"/>
+        <order filterName="Glc beta 6" order="8"/>
+        <order filterName="Glc beta 3,4" order="9"/>   
+        <linkageFilter chosenLinkagePattern="2" terminal="false" label="Glc alpha 2" name="Glc alpha 2">
+            <description/>
+            <monosaccharide allowModifications="false" allowSubstituents="false">
+                <sequence>RES
+1b:a-dglc-HEX-1:5</sequence>
+            </monosaccharide>
+        </linkageFilter>
+        <linkageFilter chosenLinkagePattern="3" terminal="false" label="Glc alpha 3" name="Glc alpha 3">
+            <description/>
+            <monosaccharide allowModifications="false" allowSubstituents="false">
+                <sequence>RES
+1b:a-dglc-HEX-1:5</sequence>
+            </monosaccharide>
+        </linkageFilter>
+        <linkageFilter chosenLinkagePattern="4" terminal="false" label="Glc alpha 4" name="Glc alpha 4">
+            <description/>
+            <monosaccharide allowModifications="false" allowSubstituents="false">
+                <sequence>RES
+1b:a-dglc-HEX-1:5</sequence>
+            </monosaccharide>
+        </linkageFilter>
+        <linkageFilter chosenLinkagePattern="6" terminal="false" label="Glc alpha 6" name="Glc alpha 6">
+            <description/>
+            <monosaccharide allowModifications="false" allowSubstituents="false">
+                <sequence>RES
+1b:a-dglc-HEX-1:5</sequence>
+            </monosaccharide>
+        </linkageFilter>
+        <linkageFilter chosenLinkagePattern="4,6" terminal="false" label="Glc alpha 4,6" name="Glc alpha 4,6">
+            <description/>
+            <monosaccharide allowModifications="false" allowSubstituents="false">
+                <sequence>RES
+1b:a-dglc-HEX-1:5</sequence>
+            </monosaccharide>
+        </linkageFilter>
+        <linkageFilter chosenLinkagePattern="2" terminal="false" label="Glc beta 2" name="Glc beta 2">
+            <description/>
+            <monosaccharide allowModifications="false" allowSubstituents="false">
+                <sequence>RES
+1b:b-dglc-HEX-1:5</sequence>
+            </monosaccharide>
+        </linkageFilter>
+        <linkageFilter chosenLinkagePattern="3" terminal="false" label="Glc beta 3" name="Glc beta 3">
+            <description/>
+            <monosaccharide allowModifications="false" allowSubstituents="false">
+                <sequence>RES
+1b:b-dglc-HEX-1:5</sequence>
+            </monosaccharide>
+        </linkageFilter>
+        <linkageFilter chosenLinkagePattern="4" terminal="false" label="Glc beta 4" name="Glc beta 4">
+            <description/>
+            <monosaccharide allowModifications="false" allowSubstituents="false">
+                <sequence>RES
+1b:b-dglc-HEX-1:5</sequence>
+            </monosaccharide>
+        </linkageFilter>
+        <linkageFilter chosenLinkagePattern="6" terminal="false" label="Glc beta 6" name="Glc beta 6">
+            <description/>
+            <monosaccharide allowModifications="false" allowSubstituents="false">
+                <sequence>RES
+1b:b-dglc-HEX-1:5</sequence>
+            </monosaccharide>
+        </linkageFilter>
+        <linkageFilter chosenLinkagePattern="3,4" terminal="false" label="Glc beta 3,4" name="Glc beta 3,4">
+            <description/>
+            <monosaccharide allowModifications="false" allowSubstituents="false">
+                <sequence>RES
+1b:b-dglc-HEX-1:5</sequence>
+            </monosaccharide>
+        </linkageFilter>
+    </combinationFilter>
+
+	<glycanFeatureFilter name="Fully defined" label="Fully defined" reducingAlditolAllowed="true" residueSugAllowed="false" unconnectedTreeAllowed="false" unitCyclicAllowed="false" unitProbableAllowed="false" unitRepeatAllowed="false" unitUndAllowed="false" unknownAnomerAllowed="false" unknownBasetypeAllowed="false" unknownConfigurationAllowed="false" unknownLinkagePositionAllowed="false" unknownLinkageTypeAllowed="false" unknownModificationPositionAllowed="false" unknownRepeatAllowed="false" unknownRingsizeAllowed="false">
+	    <description>Fully defined oligosaccharides, reducing end alditol allowed</description>
+	</glycanFeatureFilter>
+
+</filtersLibrary>

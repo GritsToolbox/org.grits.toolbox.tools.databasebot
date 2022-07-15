@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_Ybup0E0GEeab0oJABj3lSw">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_hgX6IE0GEeab0oJABj3lSw" featurename="children" parentElementId="org.grits.toolbox.core.menu.main.plugins">
+    <elements xsi:type="menu:Menu" xmi:id="_IY1YgE0HEeab0oJABj3lSw" elementId="org.grits.toolbox.tools.databasebot.menu.main" label="Database Bot" iconURI="platform:/plugin/org.grits.toolbox.tools.databasebot/icons/icon16.png">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_Uo1KgE0HEeab0oJABj3lSw" elementId="org.grits.toolbox.tools.databasebot.handledmenuitem.run" label="Create new database ..." iconURI="" tooltip="Run database bot to create a new database" command="_wPCX4E0PEeab0oJABj3lSw"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_hL1ecE0PEeab0oJABj3lSw" featurename="commands" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Command" xmi:id="_wPCX4E0PEeab0oJABj3lSw" elementId="org.grits.toolbox.tools.databasebot.command.new" commandName="Create new database" description="Creates a new database starting with the wizard"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="__iHgYE0PEeab0oJABj3lSw" featurename="handlers" parentElementId="org.grits.toolbox.core.trimmedwindow.main">
+    <elements xsi:type="commands:Handler" xmi:id="_MXG10E0QEeab0oJABj3lSw" elementId="org.grits.toolbox.tools.databasebot.handler.new" contributionURI="bundleclass://org.grits.toolbox.tools.databasebot/org.grits.toolbox.tools.databasebot.handler.CreateNewDatabaseHandler" command="_wPCX4E0PEeab0oJABj3lSw"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_qkZ-sFtlEeaWbKlTB43wdg" featurename="descriptors" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_4qJKUFtlEeaWbKlTB43wdg" elementId="org.grits.toolbox.tools.databasebot.partdescriptor.overview" label="Database overview" tooltip="Overview of the structures and metadata of the database." allowMultiple="true" closeable="true" dirtyable="true" contributionURI="bundleclass://org.grits.toolbox.tools.databasebot/org.grits.toolbox.tools.databasebot.parts.DatabaseOverviewPart">
+      <tags>perspective:org.grits.toolbox.core.perspective.projectexplorer</tags>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>

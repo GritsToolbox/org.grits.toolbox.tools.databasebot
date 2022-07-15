@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<filtersLibrary name="MS Filters" version="1.0">
+    <monosaccharideFilter max="0" min="0" label="Hex" name="Hex" type="INTEGER">
+        <description>Hexose residues</description>
+        <sequence>RES
+1b:x-HEX-1:5</sequence>
+    </monosaccharideFilter>
+    <monosaccharideFilter max="0" min="0" label="KDN" name="KDN" type="INTEGER">
+        <description>KDN residues</description>
+        <sequence>RES
+1b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d</sequence>
+    </monosaccharideFilter>
+    <monosaccharideFilter max="0" min="0" label="Neu" name="Neu" type="INTEGER">
+        <description>Neu residues</description>
+        <sequence>RES
+1b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d
+2s:amino
+LIN
+1:1d(5+1)2n</sequence>
+    </monosaccharideFilter>
+    <monosaccharideFilter max="0" min="0" label="NeuAc" name="NeuAc" type="INTEGER">
+        <description>NeuAc residues</description>
+        <sequence>RES
+1b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d"n2s:n-acetyl
+LIN
+1:1d(5+1)2n</sequence>
+    </monosaccharideFilter>
+    <monosaccharideFilter max="0" min="0" label="NeuGc" name="NeuGc" type="INTEGER">
+        <description>NeuGc residues</description>
+        <sequence>RES
+1b:x-dgro-dgal-NON-2:6|1:a|2:keto|3:d
+2s:n-glycolyl
+LIN
+1:1d(5+1)2n</sequence>
+    </monosaccharideFilter>
+    <monosaccharideFilter max="0" min="0" label="HexNAc" name="HexNAc" type="INTEGER">
+        <description>HexNAc residues</description>
+        <sequence>RES
+1b:x-HEX-1:5
+2s:n-acetyl
+LIN
+1:1d(2+1)2n</sequence>
+    </monosaccharideFilter>
+    <substituentFilter max="0" min="0" label="S" name="Sulphate" type="INTEGER">
+        <description>Sulphate modification</description>
+        <substituent>SULFATE</substituent>
+    </substituentFilter>
+    <substituentFilter max="0" min="0" label="P" name="Phosphate" type="INTEGER">
+        <description>Phosphate modification</description>
+        <substituent>PHOSPHATE</substituent>
+    </substituentFilter>
+    <monosaccharideFilter max="0" min="0" label="dHex" name="dHex" type="INTEGER">
+        <description>deoxy-Hexose residues</description>
+        <sequence>RES
+1b:x-HEX-1:5|6:d</sequence>
+    </monosaccharideFilter>
+    <monosaccharideFilter max="0" min="0" label="Pen" name="Pen" type="INTEGER">
+        <description>Pentose residues</description>
+        <sequence>RES
+1b:x-PEN-x:x</sequence>
+    </monosaccharideFilter>
+    <monosaccharideFilter max="0" min="0" label="HexA" name="HexA" type="INTEGER">
+        <description>Hexuronic acid residues</description>
+        <sequence>RES
+1b:x-HEX-1:5|6:a</sequence>
+    </monosaccharideFilter>
+    <substructureFilter label="GalGal" name="GalGal" type="BOOLEAN">
+        <description>Gal(1-3)Gal Epitope</description>
+        <sequences>
+            <sequence>RES
+1b:x-dgal-HEX-1:5
+2b:a-dgal-HEX-1:5
+LIN
+1:1o(3+1)2d</sequence>
+        </sequences>
+    </substructureFilter>
+    <substructureFilter label="BiSected" name="Bisection" type="BOOLEAN">
+        <description>Bisected N-Glycans</description>
+        <sequences>
+            <sequence>RES
+1b:x-dglc-HEX-1:5
+2s:n-acetyl
+3b:b-dglc-HEX-1:5
+4s:n-acetyl
+5b:b-dman-HEX-1:5
+6b:a-dman-HEX-1:5
+7b:b-dglc-HEX-1:5
+8s:n-acetyl
+9b:a-dman-HEX-1:5
+LIN
+1:1d(2+1)2n
+2:1o(4+1)3d
+3:3d(2+1)4n
+4:3o(4+1)5d
+5:5o(3+1)6d
+6:5o(4+1)7d
+7:7d(2+1)8n
+8:5o(6+1)9d</sequence>
+        </sequences>
+    </substructureFilter>
+</filtersLibrary>
